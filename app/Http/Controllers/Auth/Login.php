@@ -104,6 +104,8 @@ class Login extends Controller
         // Redirect to landing page if is user
         $url = route($user->landing_page, ['company_id' => $company->id]);
 
+        return redirect($url);
+
         return response()->json([
             'status' => null,
             'success' => true,
