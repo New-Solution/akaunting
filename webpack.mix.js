@@ -15,7 +15,7 @@ require('laravel-mix-tailwind');
 //mix.js('resources/assets/js/views/**/*.js', 'public/js')
 
 mix
-    .setPublicPath('public/')
+    .setPublicPath('/')
     .webpackConfig({
         output: {
             publicPath: 'public/js/',
